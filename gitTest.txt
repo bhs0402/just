@@ -8,3 +8,6 @@ git config --list
 git init
 git add '파일 이름'
 git commit -m '파일 이름'
+
+git branch descrption
+git switch descrption
