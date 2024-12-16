@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.banner-container {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 400px; /* 배너 높이 */
+}
+
+.slide-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* 부드러운 이동 효과 */
+}
+
+.slide {
+  min-width: 100%; /* 화면 크기 기준으로 슬라이드 폭 설정 */
+  text-align: center;
+}
+
+.slide img {
+  width: 100%; /* 이미지 너비를 화면에 맞춤 */
+  height: auto; /* 비율 유지 */
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+/* 슬라이드 점 스타일 */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: lightgray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: gray;
+}
